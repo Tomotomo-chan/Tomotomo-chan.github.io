@@ -72,10 +72,13 @@
 
 	// BOX DISPLAYER
 
-		if (document.getElementById("description_box").style.display === "none")
-			document.getElementById("description_box").innerHTML = "↑";
-		else
-			document.getElementById("description_box").innerHTML = "↓";
+		function	box_arrow(id_elem)
+		{
+			if (document.getElementById(id_elem).style.display === "none")
+				document.getElementById(id_elem).innerHTML = "↑";
+			else
+				document.getElementById(id_elem).innerHTML = "↓";
+		}
 
 		function	box_display(id_elem)
 		{
@@ -84,6 +87,9 @@
 			disp = show_elem(id_elem);
 			document.getElementById(id_elem).style.display = disp;
 		}
+
+		box_arrow('school');
+		box_arrow('langages_de_prog');
 	</script>
 
 </html>
