@@ -17,6 +17,11 @@ div.info
 	display: inline-block;
 }
 
+img.logo
+{
+	height: 250px;
+}
+
 div.title
 {
 	height: 300px;
