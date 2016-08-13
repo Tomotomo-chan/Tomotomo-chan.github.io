@@ -7,6 +7,17 @@
 	<!-- JS SCRIPTS -->
 	<script type="text/javascript" src="age.js"></script>
 	<script type="text/javascript" src="description_box.js"></script>
+	<script type="text/javascript">
+		
+		function	box_arrow(id_elem, id_write)
+		{
+			if (document.getElementById(id_elem).style.display === "none")
+				document.getElementById(id_write).innerHTML = "↑";
+			else
+				document.getElementById(id_write).innerHTML = "↓";
+		}
+
+	</script>
 </head>
 
 <body>
@@ -75,14 +86,6 @@
 
 	// BOX DISPLAYER
 
-		function	box_arrow(id_elem, id_write)
-		{
-			if (document.getElementById(id_elem).style.display === "none")
-				document.getElementById(id_write).innerHTML = "↑";
-			else
-				document.getElementById(id_write).innerHTML = "↓";
-		}
-
 		function	box_display(id_elem)
 		{
 			var disp;
@@ -91,7 +94,6 @@
 			document.getElementById(id_elem).style.display = disp;
 		}
 
-		box_arrow('langages_de_prog');
 	</script>
 
 </html>
