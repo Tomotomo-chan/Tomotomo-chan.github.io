@@ -145,11 +145,28 @@ span.box_title
 	}
 }
 
-@media all and (max-width: 500px)
+@media all and (max-width: 600px)
 {
 	#description_box
 	{
 		width: 100%;
 		display: block;
 	}
+
+	div.boxes
+	{
+		display: block;
+	}
+
+	div.info_txt
+	{
+		display: block;
+	}
+
+	div.info_img
+	{
+		display: none;
+	}
+
+
 }
