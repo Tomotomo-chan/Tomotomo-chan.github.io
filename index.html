@@ -19,23 +19,11 @@
 	</div>
 	</body>
 
-<script type="text/javascript">
+<script type="text/javascript" src="infos.js">
 
 	document.getElementById("age").innerHTML = ft_age("20 October 1996");
 
-	function ft_age(born_date)
-	{
-		var birthday;
-		var	age;
 
-		birthday = new Date(born_date);
-		age = new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0) - 1;
-		string = "Nee le ".concat(born_date);
-		string = string.concat(" (");
-		string = string.concat(age);
-		string = string.concat(")");
-		return string;
-	}
 
 </script>
 

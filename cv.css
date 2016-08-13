@@ -12,7 +12,8 @@ img
 
 div.info
 {
-	text-align: left;
+	color: white;
+	text-align: right;
 	display: inline-block;
 }
 
