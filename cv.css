@@ -16,6 +16,7 @@ img
 
 div.banner
 {
+	font-size: 20px;
 	padding-top: 10px;
 	margin: auto;
 	text-align: center;
@@ -78,14 +79,6 @@ div.boxes
 	padding: 20px 10px 20px 20px;
 }
 
-@media all and (min-width: 1150px)
-{
-	#description_box
-	{
-		width: 500px;
-	}
-}
-
 #school
 {
 	display: none;
@@ -101,4 +94,23 @@ span.box_title
 	font-weight: bold;
 	font-size: 20px;
 	color: #0099ff;
+}
+
+@media all and (min-width: 1200px)
+{
+	#description_box
+	{
+		width: 500px;
+	}
+
+	div.banner
+	{
+		font-size: 25px;
+		height: 40px;
+	}
+
+	div.info_name
+	{
+		font-size: 35px;
+	}
 }
