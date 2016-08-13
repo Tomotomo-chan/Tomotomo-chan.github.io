@@ -60,5 +60,6 @@ function	disp_competence(competence, nb_stars)
 	console.log("coucou !");
 	console.log(string);
 	document.getElementById(competence).style.color = color;
+	competence = competence.concat("	");
 	document.getElementById(competence).innerHTML = competence.concat(string);
 }
