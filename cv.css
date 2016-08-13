@@ -224,5 +224,23 @@ span.box_title
 		text-align: left;
 		padding-left: 20px;
 	}
-
 }
+
+@media all and (max-width: 450px)
+{
+	img.logo
+	{
+		height: 200px;
+	}
+	
+	div.info_img
+	{
+		padding: 5px;
+	}
+
+	div.info_txt
+	{
+		padding: 5px;
+	}
+}
+
