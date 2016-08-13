@@ -106,14 +106,22 @@ span.box_title:hover
 {
 	display: none;
 }
+
+#comp_web
+{
+	display: none;
+}
+
 #comp_autres
 {
 	display: none;
 }
+
 #langues
 {
 	display: none;
 }
+
 #hobbies
 {
 	display: none;
