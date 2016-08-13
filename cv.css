@@ -144,3 +144,12 @@ span.box_title
 		font-size: 17px;
 	}
 }
+
+@media all and (max-width: 500px)
+{
+	#description_box
+	{
+		width: 100%;
+		display: block;
+	}
+}
