@@ -57,9 +57,8 @@ function	disp_competence(competence, nb_stars)
 			stars = stars.concat("☆");
 		i++;
 	}
-	console.log(stars);
 	document.getElementById(competence).style.color = color;
-	final_str = competence.concat("	");
+	final_str = competence.concat("		");
 	final_str = final_str.concat(stars);
 	document.getElementById(competence).innerHTML = final_str;
 }
