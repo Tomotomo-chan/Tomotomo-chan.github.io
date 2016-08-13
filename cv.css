@@ -41,8 +41,10 @@ div.info_txt
 	display: inline-block;
 }
 
-span.name
+div.info_name
 {
+	display: inline-block;
+	color: white;
 	padding: 25px;
 	font-size: 30px;
 }
