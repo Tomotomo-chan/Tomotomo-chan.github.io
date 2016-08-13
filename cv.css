@@ -95,8 +95,6 @@ span.box_title:hover
 #langages_de_prog
 {
 	display: none;
-	text-align: left;
-	padding-left: 20px;
 }
 
 span.box_title
@@ -163,15 +161,11 @@ span.box_title
 
 	#description_box
 	{
+		text-align: center;
 		box-shadow: none;
 		margin: 5px 0px 5px;
 		width: 100%;
 		display: block;
-	}
-
-	span.box_title
-	{
-		text-align: center;
 	}
 
 	div.boxes
@@ -195,5 +189,10 @@ span.box_title
 		height: 200px;
 	}
 
+	#langages_de_prog
+	{
+		text-align: left;
+		padding-left: 20px;
+	}
 
 }
