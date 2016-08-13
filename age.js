@@ -13,5 +13,3 @@ function	ft_age(born_date)
 	console.log("coucou 2");
 	return result;
 }
-
-document.getElementById("age").innerHTML = ft_age("20 October 1996");
