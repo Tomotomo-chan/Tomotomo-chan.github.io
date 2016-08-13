@@ -1,5 +1,16 @@
 body
 {
+	margin: 0px;
 	font-size: 18px;
 	font-family: arial;
+}
+
+div.info
+{
+	display: inline-block;
+}
+
+div.title
+{
+	background: #99ccff;
 }
