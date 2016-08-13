@@ -232,10 +232,10 @@ span.box_title
 	{
 		height: 200px;
 	}
-	
+
 	div.info_img
 	{
-		padding: 5px;
+		padding-left: 5px;
 	}
 
 	div.info_txt
