@@ -5,7 +5,7 @@ function	show_elem(elem_id)
 
 	old_display = document.getElementById(elem_id).style.display;
 	console.log(old_display);
-	if ( display.localeCompare("none") == 0)
+	if ( old_display.localeCompare("none") == 0)
 		new_display = "normal";
 	else
 		new_display = "none";
