@@ -102,6 +102,11 @@ span.box_title:hover
 	display: none;
 }
 
+#comp_c
+{
+	display: none;
+}
+
 span.box_title
 {
 	font-weight: bold;
