@@ -48,18 +48,18 @@ function	disp_competence(competence, nb_stars)
 	i = 0;
 	nb_stars = check_stars(nb_stars);
 	color = get_color_with_competence(nb_stars);
-	string = "";
+	stars = "";
 	while (i < 5)
 	{
 		if (i < nb_stars)
-			string = string.concat("★");
+			stars = stars.concat("★");
 		else
-			string = string.concat("☆");
+			stars = stars.concat("☆");
 		i++;
 	}
-	console.log("coucou !");
-	console.log(string);
+	console.log(stars);
 	document.getElementById(competence).style.color = color;
-	competence = competence.concat("	");
-	document.getElementById(competence).innerHTML = competence.concat(string);
+	final_str = competence.concat("	");
+	final_str = final_str.concat(stars);
+	document.getElementById(competence).innerHTML = final_str;
 }
