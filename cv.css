@@ -5,12 +5,20 @@ body
 	font-family: arial;
 }
 
+img
+{
+	max-width: 100%;
+}
+
 div.info
 {
+	width: 75vw;
+	text-align: left;
 	display: inline-block;
 }
 
 div.title
 {
+	height: 300px;
 	background: #99ccff;
 }
