@@ -35,7 +35,7 @@
 
 <!-- DESCRIPTION PART -->
 
-	<div id="description_box" onclick="show_elem('school')">
+	<div id="description_box" onclick="box_display('school')">
 		<span class="box_title">Parcours scolaire</span>
 		<div id="school">
 			elem 1 <br>
@@ -48,8 +48,15 @@
 
 <!-- JAVASCRIPT PART -->
 
-	<!-- AGE DISPLAYER -->
 	<script>
+	// AGE DISPLAYER
 		document.getElementById("age").innerHTML = ft_age("20 October 1996");
+
+	// BOX DISPLAYER
+		function	box_display(id_elem)
+		{
+			show_elem(id_elem);
+		}
+
 	</script>
 </html>
