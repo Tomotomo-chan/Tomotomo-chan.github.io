@@ -203,6 +203,11 @@ span.box_title
 		display: block;
 	}
 
+	div.banner
+	{
+		font-size: 15px;
+	}
+
 	div.boxes
 	{
 		display: block;
@@ -247,5 +252,11 @@ span.box_title
 	{
 		padding: 5px;
 	}
+
+	div.banner
+	{
+		font-size: 13px;
+	}
+
 }
 
