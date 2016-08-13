@@ -43,6 +43,7 @@ div.info_txt
 
 div.info_name
 {
+	padding-bottom: 25px;
 	color: white;
 	font-size: 30px;
 }
@@ -62,3 +63,11 @@ div.title
 ** BODY PART
 */
 
+#description_box
+{
+	background: #99c2ff;
+	width: 50vw;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+}
