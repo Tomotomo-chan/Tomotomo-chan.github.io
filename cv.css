@@ -10,13 +10,20 @@ img
 	max-width: 100%;
 }
 
-#age
-{}
+/*#age*/
+/*{}*/
 
-div.info
+div.info_img
+{
+	padding-bottom: 30px;
+	width: 75vw;
+	display: inline-block;
+}
+
+div.info_txt
 {
 	color: white;
-	text-align: right;
+	text-align: left;
 	display: inline-block;
 }
 
