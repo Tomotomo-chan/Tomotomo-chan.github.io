@@ -106,7 +106,7 @@ span.box_title
 
 	div.title
 	{
-		height: 400px;
+		height: 375px;
 	}
 
 	div.banner
@@ -118,6 +118,11 @@ span.box_title
 	div.info_name
 	{
 		font-size: 35px;
+	}
+
+	span.box_title
+	{
+		font-size: 24px;
 	}
 }
 
@@ -132,5 +137,10 @@ span.box_title
 	{
 		font-size: 18px;
 		height: 25px;
+	}
+
+	span.box_title
+	{
+		font-size: 17px;
 	}
 }
