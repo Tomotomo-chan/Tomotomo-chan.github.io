@@ -12,9 +12,10 @@ img
 
 div.banner
 {
-	box-shadow: 5px 0px #000099;
+	text-align: center;
+	box-shadow: 5px 5px #000099;
 	height: 30px;
-	font-size: 20px;
+	color: white;
 	background: #0099ff;
 }
 
@@ -26,7 +27,7 @@ div.info_img
 
 div.info_txt
 {
-	color: white;
+	color: #d1d1e0;
 	text-align: left;
 	display: inline-block;
 }
