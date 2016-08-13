@@ -158,14 +158,20 @@ span.box_title
 		display: block;
 	}
 
-	div.info_txt
+	div.info_name
 	{
-		display: block;
+		font-size: 18px;
 	}
 
-	div.info_img
+	div.info_txt
 	{
-		display: none;
+		padding-left: 25px;
+		font-size: 15px;
+	}
+
+	img.logo
+	{
+		height: 200px;
 	}
 
 
