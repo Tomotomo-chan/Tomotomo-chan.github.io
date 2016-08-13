@@ -49,13 +49,21 @@
 			<span class="box_title">Langages de programmation</span>
 			<div id="langages_de_prog">
 				 <ul>
-				 	<li>C <color green>★★★★☆</color> </li>
-				 	<li>php <color lightgreen>★★★☆☆</color> </li>
-				 	<li>HTML/CSS ★★☆☆☆ </li>
-				 	<li>Javascript ★☆☆☆☆</li>
-				 	<li>python ★☆☆☆☆</li>
-				 	<li>MySQL ★☆☆☆☆</li>
-				 	<li>script shell ★★☆☆☆</li>
+				 	<!-- <li id="comp_C">C <span id=""> ★★★★☆ </span> </li>
+				 	<li>php <span id=""> ★★★☆☆ </span> </li>
+				 	<li>HTML/CSS <span id=""> ★★☆☆☆ </span> </li>
+				 	<li>Javascript <span id=""> ★☆☆☆☆ </span></li>
+				 	<li>python <span id=""> ★☆☆☆☆ </span></li>
+				 	<li>MySQL <span id=""> ★☆☆☆☆ </span></li>
+				 	<li>script shell <span id=""> ★★☆☆☆ </span></li> -->
+
+				 	<li id="comp_C"></li>
+				 	<li id="comp_php"></li>
+				 	<li id="comp_html_css"></li>
+				 	<li id="comp_js"></li>
+				 	<li id="comp_python"></li>
+				 	<li id="comp_mysql"></li>
+				 	<li id="comp_script_shell"></li>
 				 </ul>
 			</div>
 		</div>
@@ -79,6 +87,15 @@
 			disp = show_elem(id_elem);
 			document.getElementById(id_elem).style.display = disp;
 		}
+
+		//COMPETENCE DISPLAYER
+		disp_competence("comp_C", 4);
+		disp_competence("comp_php", 3);
+		disp_competence("comp_html_css", 2);
+		disp_competence("comp_js", 2);
+		disp_competence("comp_python", 1);
+		disp_competence("comp_mysql", 1);
+		disp_competence("comp_script_shell", 2);
 
 	</script>
 
