@@ -30,6 +30,7 @@
 
 		birthday = new Date(born_date);
 		age = new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
+		return age;
 	}
 
 </script>
