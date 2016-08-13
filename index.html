@@ -49,7 +49,7 @@
 			<span class="box_title">Langages de programmation</span>
 			<div id="langages_de_prog">
 				 <ul>
-				 	<li>C</li>
+				 	<li>C ★☆</li>
 				 	<li>php</li>
 				 	<li>HTML/CSS</li>
 				 	<li>Javascript</li>
@@ -71,6 +71,12 @@
 		document.getElementById("age").innerHTML = ft_age("20 October 1996");
 
 	// BOX DISPLAYER
+
+		if (document.getElementById("description_box").style.display === "none")
+			document.getElementById("description_box").innerHTML = "↑";
+		else
+			document.getElementById("description_box").innerHTML = "↓";
+
 		function	box_display(id_elem)
 		{
 			var disp;
@@ -78,6 +84,6 @@
 			disp = show_elem(id_elem);
 			document.getElementById(id_elem).style.display = disp;
 		}
-
 	</script>
+
 </html>
