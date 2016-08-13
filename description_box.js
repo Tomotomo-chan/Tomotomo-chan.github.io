@@ -18,15 +18,15 @@ function	get_color_with_competence(nb_stars)
 	if (nb_stars == 5)
 		color = "#66ff66";
 	else if (nb_stars == 4)
-		color = "ccff66";
+		color = "#ccff66";
 	else if (nb_stars == 3)
-		color = "ffff99";
+		color = "#ffff99";
 	else if (nb_stars == 2)
-		color = "ff9966";
+		color = "#ff9966";
 	else if (nb_stars == 1)
-		color = "ff6666";
+		color = "#ff6666";
 	else
-		color = "cc0000";
+		color = "#cc0000";
 	return color;
 }
 
