@@ -57,7 +57,6 @@ function	disp_competence(competence, nb_stars)
 			stars = stars.concat("☆");
 		i++;
 	}
-	document.getElementById(competence).
 	document.getElementById(competence).style.color = color;
 	final_str = competence.concat("	");
 	final_str = final_str.concat(stars);
