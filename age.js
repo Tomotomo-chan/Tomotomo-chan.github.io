@@ -22,3 +22,5 @@ function	ft_age(born_date)
 	console.log("coucou 2");
 	return result;
 }
+
+disp_mathilde_age();
