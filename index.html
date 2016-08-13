@@ -39,6 +39,9 @@
 
 		<div id="description_box" onclick="box_display('school')">
 			<span class="box_title">Parcours scolaire</span>
+			<div id="arrow_school">
+				<script type="text/javascript">box_arrow('school', 'arrow');</script>
+			</div>
 			<div id="school">
 				<br>Baccalaureat STI2D* (mention Tres Bien) <br>
 				<span style="font-size: 10px">* : (Sciences et Technologies de l'Industrie et du Developpement Durable)<span>
@@ -72,12 +75,12 @@
 
 	// BOX DISPLAYER
 
-		function	box_arrow(id_elem)
+		function	box_arrow(id_elem, id_write)
 		{
 			if (document.getElementById(id_elem).style.display === "none")
-				document.getElementById(id_elem).innerHTML = "↑";
+				document.getElementById(id_write).innerHTML = "↑";
 			else
-				document.getElementById(id_elem).innerHTML = "↓";
+				document.getElementById(id_write).innerHTML = "↓";
 		}
 
 		function	box_display(id_elem)
@@ -88,7 +91,6 @@
 			document.getElementById(id_elem).style.display = disp;
 		}
 
-		box_arrow('school');
 		box_arrow('langages_de_prog');
 	</script>
 
