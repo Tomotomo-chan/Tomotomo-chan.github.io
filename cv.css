@@ -12,7 +12,7 @@ img
 
 div.banner
 {
-	box-shadow: 5px 5px;
+	box-shadow: 5px #000099;
 	height: 30px;
 	font-size: 20px;
 	background: #0099ff;
