@@ -7,17 +7,6 @@
 	<!-- JS SCRIPTS -->
 	<script type="text/javascript" src="age.js"></script>
 	<script type="text/javascript" src="description_box.js"></script>
-	<script type="text/javascript">
-		
-		function	box_arrow(id_elem, id_write)
-		{
-			if (document.getElementById(id_elem).style.display === "none")
-				document.getElementById(id_write).innerHTML = "↑";
-			else
-				document.getElementById(id_write).innerHTML = "↓";
-		}
-
-	</script>
 </head>
 
 <body>
@@ -50,9 +39,6 @@
 
 		<div id="description_box" onclick="box_display('school')">
 			<span class="box_title">Parcours scolaire</span>
-			<div id="arrow_school">
-				<script type="text/javascript">box_arrow('school', 'arrow_school');</script>
-			</div>
 			<div id="school">
 				<br>Baccalaureat STI2D* (mention Tres Bien) <br>
 				<span style="font-size: 10px">* : (Sciences et Technologies de l'Industrie et du Developpement Durable)<span>
