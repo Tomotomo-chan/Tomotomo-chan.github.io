@@ -42,6 +42,7 @@ div.info_txt
 
 div.info_name
 {
+	background: #669999;
 	padding-bottom: 25px;
 	color: white;
 	font-size: 30px;
@@ -69,6 +70,7 @@ div.boxes
 
 #description_box
 {
+	display: inline-block;
 	color: #669999;
 	margin: 10px;
 	background: #cce6ff;
