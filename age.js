@@ -10,6 +10,6 @@ function	ft_age(born_date)
 	result = "Nee le 20/10/1996 (";
 	result = result.concat(age);
 	result = result.concat(" ans)");
-	console.log("coucou 2");
+	console.log("result");
 	return result;
 }
