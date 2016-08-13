@@ -116,7 +116,7 @@ span.box_title
 	}
 }
 
-@media all and (max-width: 850px)
+@media all and (max-width: 900px)
 {
 	#description_box
 	{
@@ -127,10 +127,5 @@ span.box_title
 	{
 		font-size: 18px;
 		height: 25px;
-	}
-
-	div.info_name
-	{
-		font-size: 20px;
 	}
 }
