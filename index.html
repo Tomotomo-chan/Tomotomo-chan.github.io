@@ -21,15 +21,16 @@
 
 <script type="text/javascript">
 
-function ft_age(born_date)
-{
-	var birthday;
-	var	age;
+	document.getElementById("age").innerHTML = ft_age("20 October 1996");
 
-	birthday = new Date(born_date);
-	age = new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
-	document.getElementById("age").innerHTML = age;
-}
+	function ft_age(born_date)
+	{
+		var birthday;
+		var	age;
+
+		birthday = new Date(born_date);
+		age = new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
+	}
 
 </script>
 
