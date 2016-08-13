@@ -1,12 +1,3 @@
-function	disp_mathilde_age()
-{
-	var str_age;
-
-	console.log("coucou 0");
-	str_age = ft_age("20 October 1996");
-	document.getElementById("age").innerHTML = str_age;
-}
-
 function	ft_age(born_date)
 {
 	var birthday;
@@ -22,5 +13,3 @@ function	ft_age(born_date)
 	console.log("coucou 2");
 	return result;
 }
-
-disp_mathilde_age();
