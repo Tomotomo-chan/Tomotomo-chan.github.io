@@ -161,11 +161,15 @@ span.box_title
 
 	#description_box
 	{
-		text-align: center;
 		box-shadow: none;
 		margin: 5px 0px 5px;
 		width: 100%;
 		display: block;
+	}
+
+	span.box_title
+	{
+		text-align: center;
 	}
 
 	div.boxes
