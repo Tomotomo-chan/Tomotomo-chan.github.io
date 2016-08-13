@@ -72,6 +72,7 @@ div.boxes
 #description_box
 {
 	border-bottom: 3px #7FB6EB;
+	box-shadow: 2px 2px 10px #558DC2;
 	vertical-align: top;
 	display: inline-block;
 	color: #669999;
