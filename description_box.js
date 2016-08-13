@@ -22,7 +22,7 @@ function	get_color_with_competence(nb_stars)
 	else if (nb_stars == 3)
 		color = "#ffff00";
 	else if (nb_stars == 2)
-		color = "#ffcc99";
+		color = "#ff9966";
 	else if (nb_stars == 1)
 		color = "#ff6666";
 	else
