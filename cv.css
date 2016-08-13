@@ -28,14 +28,14 @@ div.banner
 
 div.info_img
 {
-	padding-left: 30px;
+	padding-left: 50px;
 	padding-bottom: 30px;
 	display: inline-block;
 }
 
 div.info_txt
 {
-	padding-left: 30px;
+	padding-left: 50px;
 	color: #f2f2f2;
 	text-align: left;
 	display: inline-block;
