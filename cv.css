@@ -14,6 +14,12 @@ img
 ** TITLE PART
 */
 
+div.title
+{
+	height: 350px;
+	background: #99ccff;
+}
+
 div.banner
 {
 	font-size: 20px;
@@ -52,12 +58,6 @@ div.info_name
 img.logo
 {
 	height: 250px;
-}
-
-div.title
-{
-	height: 350px;
-	background: #99ccff;
 }
 
 /*
@@ -102,6 +102,11 @@ span.box_title
 	#description_box
 	{
 		width: 500px;
+	}
+
+	div.title
+	{
+		height: 400px;
 	}
 
 	div.banner
