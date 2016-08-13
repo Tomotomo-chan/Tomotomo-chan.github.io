@@ -10,5 +10,7 @@ function	show_elem(elem_id)
 		new_display = "none";
 	else
 		new_display = "normal";
+	console.log("new");
+	console.log(new_display);
 	return (new_display);
 }
