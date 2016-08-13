@@ -154,7 +154,7 @@ span.box_title
 
 	#description_box
 	{
-		margin: 0px;
+		margin: 5px 0px 5px;
 		width: 100%;
 		display: block;
 	}
