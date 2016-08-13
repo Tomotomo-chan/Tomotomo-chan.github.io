@@ -78,6 +78,14 @@ div.boxes
 	padding: 20px 10px 20px 20px;
 }
 
+@media all and (min-width: 1000px)
+{
+	#description_box
+	{
+		width: 400px;
+	}
+}
+
 #school
 {
 	display: none;
