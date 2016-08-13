@@ -1,4 +1,4 @@
-function ft_age(born_date)
+function	ft_age(born_date)
 {
 	var birthday;
 	var	age;
@@ -9,5 +9,5 @@ function ft_age(born_date)
 	result = "Nee le 20/10/1996 (";
 	result = result.concat(age);
 	result = result.concat(" ans)");
-	return result;
+	return "coucou";
 }
