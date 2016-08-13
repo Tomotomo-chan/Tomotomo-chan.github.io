@@ -152,7 +152,7 @@ span.box_title
 	}
 }
 
-@media all and (max-width: 600px)
+@media all and (max-width: 650px)
 {
 	div.title
 	{
@@ -161,6 +161,7 @@ span.box_title
 
 	#description_box
 	{
+		box-shadow: none;
 		margin: 5px 0px 5px;
 		width: 100%;
 		display: block;
