@@ -16,9 +16,9 @@ function	get_color_with_competence(nb_stars)
 	var color;
 
 	if (nb_stars == 5)
-		color = "#66ff66";
+		color = "#339933";
 	else if (nb_stars == 4)
-		color = "#ccff66";
+		color = "#2db300";
 	else if (nb_stars == 3)
 		color = "#ffff99";
 	else if (nb_stars == 2)
