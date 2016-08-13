@@ -6,11 +6,9 @@ function	show_elem(elem_id)
 	old_display = document.getElementById(elem_id).style.display;
 	console.log("old display");
 	console.log(old_display);
-	if ( old_display.localeCompare("none") == 0)
-		new_display = "normal";
-	else
+	if ( old_display === normal)
 		new_display = "none";
-	document.getElementById(elem_id).style.display = new_display;
-	console.log("new display");
-	console.log(document.getElementById(elem_id).style.display);
+	else
+		new_display = "normal";
+	return (new_display);
 }

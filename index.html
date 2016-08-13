@@ -55,7 +55,10 @@
 	// BOX DISPLAYER
 		function	box_display(id_elem)
 		{
-			show_elem(id_elem);
+			var disp;
+
+			disp = show_elem(id_elem);
+			document.getElementById(elem_id).style.display = disp;
 		}
 
 	</script>
