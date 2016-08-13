@@ -74,7 +74,7 @@ div.boxes
 	color: #669999;
 	margin: 10px;
 	background: #cce6ff;
-	width: 500px;
+	width: 400px;
 	padding: 20px 10px 20px 20px;
 }
 
@@ -82,7 +82,7 @@ div.boxes
 {
 	#description_box
 	{
-		width: 400px;
+		width: 500px;
 	}
 }
 
