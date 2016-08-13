@@ -21,7 +21,15 @@
 
 <script type="text/javascript">
 
-	document.getElementById("age").innerHTML = "coucou";
+function ft_age(born_date)
+{
+	var birthday;
+	var	age;
+
+	birthday = new Date(born_date);
+	age = new Number((new Date().getTime() - birthday.getTime()) / 31536000000).toFixed(0);
+	document.getElementById("age").innerHTML = age;
+}
 
 </script>
 
