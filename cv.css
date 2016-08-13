@@ -10,10 +10,17 @@ img
 	max-width: 100%;
 }
 
+
+/*
+** TITLE PART
+*/
+
 div.banner
 {
+	padding-top: 10px;
+	margin: auto;
 	text-align: center;
-	box-shadow: 5px 5px #000099;
+	box-shadow: 0px 2px white, 0px 8px #008ae6, 0px -2px white, 0px -8px #008ae6;
 	height: 30px;
 	color: white;
 	background: #0099ff;
@@ -27,7 +34,7 @@ div.info_img
 
 div.info_txt
 {
-	color: #d1d1e0;
+	color: #f2f2f2;
 	text-align: left;
 	display: inline-block;
 }
@@ -42,3 +49,8 @@ div.title
 	height: 350px;
 	background: #99ccff;
 }
+
+/*
+** BODY PART
+*/
+
