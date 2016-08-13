@@ -71,3 +71,9 @@ div.title
 	padding-bottom: 20px;
 	border-radius: 20px;
 }
+
+span.box_title
+{
+	font-size: 20px;
+	color: #0099ff;
+}

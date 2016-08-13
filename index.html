@@ -3,10 +3,13 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="cv.css">
 	<title>Mathilde RESSIER</title>
-	<script type="text/javascript" src="age.js">
-	</script>
+
+	<!-- JS SCRIPTS -->
+	<script type="text/javascript" src="age.js"></script>
+	<script type="text/javascript" src="description_box.js"></script>
 </head>
-	<body>
+
+<body>
 
 <!-- TITLE PART -->
 
@@ -32,15 +35,14 @@
 
 <!-- DESCRIPTION PART -->
 
-	<div id="description_box">
-		Parcours scolaire
-		Truc<br>
-		Pouet<br>
-		Hello<br>
+	<div id="description_box" onclick="show_elem('school')">
+		<span class="box_title">Parcours scolaire</span>
+		<div class="school">
+						
+		</div>
 	</div>
 
-
-	</body>
+</body>
 
 <!-- JAVASCRIPT PART -->
 
@@ -48,5 +50,6 @@
 	<script>
 		document.getElementById("age").innerHTML = ft_age("20 October 1996");
 	</script>
+	<!-- SCHOOL DISPLAYER -->
 
 </html>
