@@ -10,7 +10,6 @@ img
 	max-width: 100%;
 }
 
-
 /*
 ** TITLE PART
 */
@@ -63,8 +62,14 @@ div.title
 ** BODY PART
 */
 
+div.boxes
+{
+	display: inline-block;
+}
+
 #description_box
 {
+	color: white;
 	margin: 10px;
 	background: #cce6ff;
 	width: 50vw;
@@ -76,6 +81,10 @@ div.title
 	display: none;
 }
 
+#langages_de_prog
+{
+	display: none;
+}
 
 span.box_title
 {
