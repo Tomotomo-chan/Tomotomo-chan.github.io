@@ -23,7 +23,7 @@ function	get_color_with_competence(nb_stars)
 		color = "ffff99";
 	else if (nb_stars == 2)
 		color = "ff9966";
-	else if (nb_start == 1)
+	else if (nb_stars == 1)
 		color = "ff6666";
 	else
 		color = "cc0000";
@@ -58,7 +58,7 @@ function	disp_competence(competence, nb_stars)
 		i++;
 	}
 	console.log("coucou !");
-	console.log("string");
+	console.log(string);
 	document.getElementById(competence).style.color = color;
 	document.getElementById(competence).innerHTML = competence.concat(string);
 }
