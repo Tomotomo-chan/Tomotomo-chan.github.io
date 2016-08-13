@@ -49,6 +49,7 @@ function	disp_competence(competence, nb_stars)
 	nb_stars = check_stars(nb_stars);
 	color = get_color_with_competence(nb_stars);
 	string = "";
+	console.log("coucou 1");
 	while (i < 5)
 	{
 		if (i < nb_stars)
