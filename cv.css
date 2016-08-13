@@ -10,8 +10,12 @@ img
 	max-width: 100%;
 }
 
-/*#age*/
-/*{}*/
+div.banner
+{
+	height: 30px;
+	font-size: 20px;
+	background: #0066ff;
+}
 
 div.info_img
 {
