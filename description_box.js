@@ -10,4 +10,6 @@ function	show_elem(elem_id)
 	else
 		new_display = "none";
 	document.getElementById(elem_id).style.display = new_display;
+	console.log("new display");
+	console.log(document.getElementById(elem_id).style.display);
 }
