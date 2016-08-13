@@ -16,17 +16,17 @@ function	get_color_with_competence(nb_stars)
 	var color;
 
 	if (nb_stars == 5)
-		color = "#339933";
+		color = "#0000ff";
 	else if (nb_stars == 4)
-		color = "#2db300";
+		color = "#3333cc";
 	else if (nb_stars == 3)
-		color = "#ffff00";
+		color = "#6600cc";
 	else if (nb_stars == 2)
-		color = "#ff9966";
+		color = "#730099";
 	else if (nb_stars == 1)
-		color = "#ff6666";
+		color = "#990099";
 	else
-		color = "#cc0000";
+		color = "#660033";
 	return color;
 }
 
