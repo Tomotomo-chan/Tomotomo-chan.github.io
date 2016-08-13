@@ -147,6 +147,11 @@ span.box_title
 
 @media all and (max-width: 600px)
 {
+	div.title
+	{
+		height: 320px;
+	}
+
 	#description_box
 	{
 		width: 100%;
