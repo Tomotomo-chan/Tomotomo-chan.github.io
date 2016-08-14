@@ -240,7 +240,7 @@ span.box_title
 {
 	img.logo
 	{
-		height: 200px;
+		height: 150px;
 	}
 
 	div.info_img
@@ -250,13 +250,18 @@ span.box_title
 
 	div.info_txt
 	{
-		padding: 5px;
+		padding: 0px;
+		font-size: 13px;
 	}
 
 	div.banner
 	{
-		font-size: 10px;
+		height: 35px;
 	}
 
+	div.title
+	{
+		height: 250px;
+	}
 }
 
