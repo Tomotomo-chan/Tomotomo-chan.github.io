@@ -18,7 +18,7 @@ a
 
 a:hover
 {
-	box-shadow: 1px 1px #0099ff;
+	text-shadow: 1px 1px #0099ff;
 }
 
 .legend
