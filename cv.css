@@ -100,7 +100,7 @@ div.boxes
 
 span.box_title:hover
 {
-	text-shadow: -2px -2px white, 1px 1px #538cc6;
+	text-shadow: -1px -1px white, 1px 1px #538cc6;
 }
 
 #school
