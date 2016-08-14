@@ -150,6 +150,12 @@ span.box_title:hover
 	display: none;
 }
 
+#code_way
+{
+	display: none;
+}
+
+
 @media all and (min-width: 1200px)
 {
 	#description_box
