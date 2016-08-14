@@ -210,6 +210,8 @@ span.box_title:hover
 		text-align: center;
 		box-shadow: none;
 		margin: 5px 0px 5px;
+		padding: 5px;
+		font-size: 15px;
 		width: 100%;
 		display: block;
 	}
