@@ -118,41 +118,49 @@ span.box_title:hover
 #school
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #langages_de_prog
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #comp_c
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #comp_web
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #comp_autres
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #langues
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #hobbies
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 #code_way
 {
 	display: none;
+	transition-delay: 1s;
 }
 
 
