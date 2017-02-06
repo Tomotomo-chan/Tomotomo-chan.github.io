@@ -23,9 +23,13 @@
 
 <body ng-app="CV_App" ng-controller="CV_Ctrl">
 
+<!-- Header -->
+
 	<div class="zone_header">
 		<h1>Mathilde Ressier</h1>
 	</div>
+
+<!-- Categories click point -->
 
 	<div class="zone_intro">
 		<div class="categorie_intro_list_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
@@ -33,8 +37,18 @@
 		</div>
 	</div>
 
+<!-- Categories details -->
+
 	<div class="list_describe_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
 		<span class="describe_title">{{categorie.name}}</span>
+		
+		<br><br>
+
+		<ul ng-repeat='description in categorie.description'>
+			<li class="sub_description_title">{{description.name}}</li>
+			<span class="description_content">{{description.content}}</span>
+		</ul>
+
 	</div>
 
 </body>

@@ -36,6 +36,8 @@
 		<div class="banner">
 			Etudiante à 42 (fin de 1ère année) recherche un <b>stage</b> de 6 mois
 		</div>
+	font-family: 'Wire One', sans-serif;
+	font-size: 30px;
 
 	</div>
 
