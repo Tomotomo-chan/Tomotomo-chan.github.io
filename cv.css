@@ -1,8 +1,16 @@
+@keyframes defile
+{
+	from {background-position: 0px 0px;}
+	to {background-position: 1920px 0px;}
+}
+
 body
 {
 	margin: 0px;
 	font-size: 18px;
 	font-family: arial;
+	background-image: url('bamboo.jpg');
+	animation: defile 10s;
 }
 
 img
@@ -21,269 +29,85 @@ a:hover
 	text-shadow: 1px 1px #0099ff;
 }
 
-.legend
+h1
 {
-	font-size: 10px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 40px;
 }
 
-/*
-** TITLE PART
-*/
-
-div.title
+div[class^="zone"]
 {
-	height: 350px;
-	background: #99ccff;
+	margin: 0px;
+	max-width: 100%;
+	padding : 10px;
+	min-height: 200px;
 }
 
-div.banner
+.zone_header
 {
-	font-size: 20px;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	margin: auto;
-	text-align: center;
-	box-shadow: 0px 2px white, 0px 8px #008ae6, 0px -2px white, 0px -8px #008ae6;
-	height: 30px;
-	color: white;
-	background: #0099ff;
+	color: #f0f0f0;
 }
 
-div.info_img
+/* INTRODUCTION */
+.zone_intro
 {
-	padding-left: 50px;
-	padding-bottom: 30px;
-	display: inline-block;
-}
-
-div.info_txt
-{
-	padding-left: 50px;
-	color: #f2f2f2;
-	text-align: left;
-	display: inline-block;
-}
-
-div.info_name
-{
-	padding-bottom: 25px;
-	color: white;
-	font-size: 30px;
-}
-
-img.logo
-{
-	height: 250px;
-}
-
-/*
-** BODY PART
-*/
-
-div.boxes
-{
-	display: inline-block;
-}
-
-#description_box
-{
-	border-bottom: 3px #7FB6EB;
-	box-shadow: 2px 2px 10px #558DC2;
-	vertical-align: top;
-	display: inline-block;
-	color: #669999;
+	background-color: #3b3a30;
+	display: block;
 	margin: 10px;
-	background: #cce6ff;
-	width: 400px;
-	padding: 20px 10px 20px 20px;
 }
 
-#description_box:hover
+[class ^= "categorie_intro_list_"]
 {
+	font-family: 'Wire One', sans-serif;
+	font-size : 40px;
+	display: inline;
+	width: 299px;
+	height: 88px;
+	position:relative;
+	float:left;
+	text-align: center;
+	padding: 5px;
+	margin: 1px;
+}
+
+[class ^= "categorie_intro_list_"]:hover
+{
+	transition: 0.3s;
+	opacity: 0.7;
 	cursor: pointer;
 }
 
-span.box_title
+.categorie_intro_list_2, .list_describe_2
 {
+	background-color: #c5d5c5;
+}
+
+.categorie_intro_list_1, .list_describe_1
+{
+	background-color: #7e7d67;
+}
+
+.categorie_intro_list_0, .list_describe_0
+{
+	background-color: #eaece5;
+}
+
+[class ^= "list_describe_"]
+{
+	height: 350px;	
+	padding: 15px;
+}
+
+.list_describe_2
+{
+	opacity: 0.7;
+}
+
+.describe_title
+{
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 35px;
 	font-weight: bold;
-	font-size: 20px;
-	color: #0099ff;
 }
 
-span.box_title:hover
-{
-	text-shadow: -1px -1px white, 1px 1px #538cc6;
-}
-
-#school
-{
-	display: none;
-}
-
-#langages_de_prog
-{
-	display: none;
-}
-
-#comp_c
-{
-	display: none;
-}
-
-#comp_web
-{
-	display: none;
-}
-
-#comp_autres
-{
-	display: none;
-}
-
-#langues
-{
-	display: none;
-}
-
-#hobbies
-{
-	display: none;
-}
-
-#code_way
-{
-	display: none;
-}
-
-#projet_c
-{
-	display: none;
-}
-
-@media all and (min-width: 1200px)
-{
-	#description_box
-	{
-		width: 500px;
-	}
-
-	div.title
-	{
-		height: 375px;
-	}
-
-	div.banner
-	{
-		font-size: 25px;
-		height: 40px;
-	}
-
-	div.info_name
-	{
-		font-size: 35px;
-	}
-
-	span.box_title
-	{
-		font-size: 24px;
-	}
-}
-
-@media all and (max-width: 950px)
-{
-	#description_box
-	{
-		width: 300px;
-	}
-
-	div.banner
-	{
-		font-size: 18px;
-		height: 25px;
-	}
-
-	span.box_title
-	{
-		font-size: 17px;
-	}
-}
-
-@media all and (max-width: 750px)
-{
-	div.title
-	{
-		height: 290px;
-	}
-
-	#description_box
-	{
-		text-align: center;
-		box-shadow: none;
-		margin: 5px 0px 5px;
-		font-size: 15px;
-		width: 100%;
-		display: block;
-	}
-
-	div.banner
-	{
-		font-size: 15px;
-	}
-
-	div.boxes
-	{
-		display: block;
-	}
-
-	div.info_name
-	{
-		font-size: 18px;
-	}
-
-	div.info_txt
-	{
-		padding-left: 25px;
-		font-size: 15px;
-	}
-
-	img.logo
-	{
-		height: 200px;
-	}
-
-	#langages_de_prog
-	{
-		text-align: left;
-		padding-left: 20px;
-	}
-}
-
-@media all and (max-width: 450px)
-{
-	img.logo
-	{
-		height: 150px;
-	}
-
-	div.info_img
-	{
-		padding-left: 5px;
-	}
-
-	div.info_txt
-	{
-		padding: 0px;
-		font-size: 13px;
-	}
-
-	div.banner
-	{
-		height: 35px;
-	}
-
-	div.title
-	{
-		height: 250px;
-	}
-}
-
+/* */

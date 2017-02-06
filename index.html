@@ -1,184 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="cv.css">
+	<meta charset="UTF-8">
 	<title>Mathilde RESSIER</title>
 
+	<!-- Angular js include -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+
 	<!-- JS SCRIPTS -->
-	<script type="text/javascript" src="age.js"></script>
 	<script type="text/javascript" src="description_box.js"></script>
+	
+	<script type="text/javascript" src="cv_app_module.js"></script>
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="cv.css">
+
+
 </head>
 
-<body>
+<body ng-app="CV_App" ng-controller="CV_Ctrl">
 
-<!-- TITLE PART -->
-
-	<div class="title">
-		<div class="info_img">
-			<img src="logo42.png" class="logo" alt="42"/>
-		</div>
-		<div class="info_txt">
-			<div class="info_name">
-				Mathilde RESSIER
-			</div>
-			<span id="age">20 ans</span><br>
-			✉ : <a href="mailto:mathilderessier@hotmail.fr">mathilderessier@hotmail.fr</a><br>
-			☎ : 06 47 87 34 00<br>
-			Statut: Etudiante à <a href="http://www.42.fr/">42</a> (promo 2015)<br>
-		
-		</div>
-		<div class="banner">
-			Etudiante à 42 (fin de 1ère année) recherche un <b>stage</b> de 6 mois
-		</div>
-
+	<div class="zone_header">
+		<h1>Mathilde Ressier</h1>
 	</div>
 
-<!-- DESCRIPTION PART -->
-
-	<div class="boxes">
-
-<!-- SCHOOL -->
-		<div id="description_box" onclick="box_display('school')">
-			<span class="box_title">Parcours scolaire</span>
-			<div id="school">
-				<br>Baccalaureat STI2D* (mention Tres Bien) <br>
-				<span class="legend">* : (Sciences et Technologies de l'Industrie et du Développement Durable)</span>
-				<br> 42 - promo 2015 <a href="http://www.42.fr/"><span class="legend">(lien du site)</span></a><br>
-
-			</div>
+	<div class="zone_intro">
+		<div class="categorie_intro_list_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
+			<span>{{categorie.name}}</span>
 		</div>
+	</div>
 
-<!-- PROGRAMMATION -->
-		<div id="description_box" onclick="box_display('langages_de_prog')">
-			<span class="box_title">Langages de programmation</span>
-			<div id="langages_de_prog">
-				<span class="legend">5 ★ = plus aucun secret, 3 ★ = maitrise de la syntaxe et de bonnes connaissances générales, 1 ★ = les bases doublées d'un peu de pratique</span>
-				 <ul>
-				 	<li id="C"></li>
-				 	<li id="PHP"></li>
-				 	<li id="Environnement UNIX"></li>
-				 	<li id="HTML CSS"></li>
-				 	<li id="Script shell"></li>
-				 	<li id="Javascript"></li>
-				 	<li id="Python"></li>
-				 	<li id="MySQL"></li>
-				 </ul>
-			</div>
-		</div>
-
-<!-- Compétences -->
-		<div id="description_box" onclick="box_display('comp_c')">
-			<span class="box_title">Compétences C</span>
-			<div id="comp_c">
-				<ul>
-					<li>Structures de données (listes chainées, arbre binaire, structures, etc.)</li>
-					<li>Appels système</li>
-					<li>Backtracking</li>
-					<li>Itératif/Récursif</li>
-					<li>Pointeurs sur fonctions</li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="description_box" onclick="box_display('projet_c')">
-			<span class="box_title">Projets C</span>
-			<div id="projet_c">
-				<ul>
-					<li>Recode de la fonction <b> printf </b> (flags sSpdDioOuUxXcC)</li>
-					<li>Recode de la fonction <b>ls</b> avec flags <br></li>
-					<li>Développement d'un programme utilisant le brute force pour résoudre une problématique</li>
-					<li>Developement d'une IA de tri optimisé</li>
-					<li>Developement d'une IA pour un puissance 4 utilisant l'agorithme MinMax<br></li>
-					<li>Développement d'un programme de sélection a l'aide des Termcaps</li>
-					<li>Création d'une bibliothèque personnelle</li>
-					<li>Développement d'un shell type Bash au complet</li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="description_box" onclick="box_display('comp_web')">
-			<span class="box_title">Projets web</span>
-			<div id="comp_web">
-				<ul>
-					<li>Creation du front-end et d'une partie du back-end (en php: gestion de sessions, mot de passes, produits) d'un site de commerce en rush (2 jours)</li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="description_box" onclick="box_display('comp_autres')">
-			<span class="box_title">Projets/Compétences autres</span>
-			<div id="comp_autres">
-				<ul>
-					<li>Creation de programmes de test unitaires en <b>C</b> et en <b>script shell</b> pour mes projets</li>
-					<li>Utilisation quotidienne de Git</li>
-					<li>Gestion des projets avec Trello</li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="description_box" onclick="box_display('langues')">
-			<span class="box_title">Langues</span>
-			<div id="langues">
-				<ul>
-					<li>Anglais: lu couramment, écrit et parlé niveau lycée
-					<li>Espagnol: niveau lycée
-					<li>Japonais: débutant
-				</ul>
-			</div>
-		</div>
-
-<!-- Me -->
-
-		<div id="description_box" onclick="box_display('hobbies')">
-			<span class="box_title">Hobbies</span>
-			<div id="hobbies">
-				L'informatique, les sciences en général<br>
-				La culture japonaise<br>
-				Le dessin, les arts manuels, la lecture (romans, mangas), la musique (10 ans de flute traversière)
-			</div>
-		</div>
-
-		<div id="description_box" onclick="box_display('code_way')">
-			<span class="box_title">Mes motivations</span>
-			<div id="code_way">
-				<br>
-				Avoir un code propre et fonctionnel. Pour cela, je pratique les tests unitaires, je relis mon code et n'hésite pas à le modifier. Les conseils sont toujours les bienvenus.<br>
-				<br>Travailler en équipe, avec une bonne communication, du partage, de l'entraide, du soutien, et toujours apprendre les uns des autres !<br>
-				<br>Cultiver la rigueur, le goût du travail bien fait, la curiosité et ne jamais cesser d'apprendre.<br>
-			</div>
-		</div>
-
+	<div class="list_describe_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
+		<span class="describe_title">{{categorie.name}}</span>
 	</div>
 
 </body>
-
-<!-- JAVASCRIPT PART -->
-
-	<script>
-	// AGE DISPLAYER
-		document.getElementById("age").innerHTML = ft_age("20 October 1996");
-
-	// BOX DISPLAYER
-
-		function	box_display(id_elem)
-		{
-			var disp;
-
-			disp = show_elem(id_elem);
-			document.getElementById(id_elem).style.display = disp;
-		}
-
-	//COMPETENCE DISPLAYER
-	
-		disp_competence("C", 4);
-		disp_competence("PHP", 3);
-		disp_competence("Environnement UNIX", 3);
-		disp_competence("HTML CSS", 2);
-		disp_competence("Javascript", 2);
-		disp_competence("Script shell", 2);
-		disp_competence("Python", 1);
-		disp_competence("MySQL", 1);
-
-	</script>
-
-</html>
