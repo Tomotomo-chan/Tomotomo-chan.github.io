@@ -43,10 +43,11 @@ cv_app.controller("CV_Ctrl", function ($scope)
 												new description("Angular JS", "★★☆☆☆"),
 												new description("J'aimerais faire:", "Node JS")
 											]),
-							 new categorie(i += 1, "Parcours scolaire", "list",
+							 new categorie(i += 1, "Parcours scolaire et expériences professionnelles", "list",
 							 				[
 												new description("⚪ Baccalaureat STI2D (*) (mention Tres Bien)", "(*) Sciences et Technologies de l'Industrie et du Développement Durable. Lycée Monge, Savigny sur Orge (91)"),
-												new description("⚪ Ecole 42", "\"Sa pédagogie, c’est le peer-to-peer learning : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité grâce à l’apprentissage par projets.[...]\"")
+												new description("⚪ Ecole 42", "\"Sa pédagogie, c’est le peer-to-peer learning : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité grâce à l’apprentissage par projets.[...]\""),
+												new description("⚪ STG Interactive - Stage de 6 mois (Octobre 2016 - Avril 2017)", "Stage de fin de 1ère année. Compétences: C, shell script, rigueur, travail d'équipe et remise en question")
 							 				]),						 
 							 new categorie(i += 1, "Compétences C", "list",
 							 				[

@@ -8,7 +8,7 @@ body
 {
 	margin: 0px;
 	font-size: 18px;
-	font-family: arial;
+	font-family: 'Raleway';
 	background-image: url('bamboo.jpg');
 	animation: defile 10s;
 }
@@ -26,13 +26,19 @@ a
 
 a:hover
 {
-	text-shadow: 1px 1px #0099ff;
+	color: #c5d5c5;
+	text-shadow: 1px 1px black;
 }
 
 h1
 {
 	font-family: 'Julius Sans One', sans-serif;
-	font-size: 40px;
+	font-size: 45px;
+}
+
+h4
+{
+	padding: 10px;
 }
 
 ul
@@ -47,12 +53,12 @@ div[class^="zone"]
 	margin: 0px;
 	max-width: 100%;
 	padding : 10px;
-	min-height: 200px;
+	height: 200px;
 }
 
 .zone_header
 {
-	color: #f0f0f0;
+	color: #f0f0f0;				/* light green */
 }
 
 /* introduction */
