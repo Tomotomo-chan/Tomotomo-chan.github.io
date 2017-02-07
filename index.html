@@ -6,6 +6,7 @@
 
 	<!-- Angular js include -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="lib/angular/angular-sanitize.min.js"></script>
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
@@ -17,6 +18,8 @@
 
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="cv.css">
+	<link rel="stylesheet" type="text/css" href="categorie_list.css">
+	<link rel="stylesheet" type="text/css" href="describers.css">
 
 
 </head>
@@ -44,10 +47,10 @@
 		
 		<br><br>
 
-		<ul ng-repeat='description in categorie.description'>
-			<li class="sub_description_title">{{description.name}}</li>
+		<div class="description_{{categorie.display_type}}" ng-repeat='description in categorie.description'>
+			<div class="sub_description_title">{{description.name}}</div>
 			<span class="description_content">{{description.content}}</span>
-		</ul>
+		</div>
 
 	</div>
 

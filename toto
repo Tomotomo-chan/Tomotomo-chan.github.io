@@ -64,7 +64,7 @@
 				 <ul>
 				 	<li id="C"></li>
 				 	<li id="PHP"></li>
-				 	<li id="Environnement UNIX"></li>
+				 	<li id="UNIX"></li>
 				 	<li id="HTML CSS"></li>
 				 	<li id="Script shell"></li>
 				 	<li id="Javascript"></li>
@@ -92,8 +92,8 @@
 			<span class="box_title">Projets C</span>
 			<div id="projet_c">
 				<ul>
-					<li>Recode de la fonction <b> printf </b> (flags sSpdDioOuUxXcC)</li>
-					<li>Recode de la fonction <b>ls</b> avec flags <br></li>
+					<li>Recode de la fonction printf (flags sSpdDioOuUxXcC)</li>
+					<li>Recode de la fonction <b>ls avec flags <br></li>
 					<li>Développement d'un programme utilisant le brute force pour résoudre une problématique</li>
 					<li>Developement d'une IA de tri optimisé</li>
 					<li>Developement d'une IA pour un puissance 4 utilisant l'agorithme MinMax<br></li>

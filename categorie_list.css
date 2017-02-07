@@ -1,0 +1,54 @@
+/* clicker categories boxes */
+
+[class ^= "categorie_intro_list_"]
+{
+	font-family: 'Raleway', sans-serif;
+	font-size : 25px;
+	display: inline;
+	width: 299px;
+	height: 88px;
+	position:relative;
+	float:left;
+	text-align: center;
+	padding: 5px;
+	margin: 1px;
+}
+
+[class ^= "categorie_intro_list_"]:hover
+{
+	transition: 0.3s;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+
+/* description list boxes */
+
+[class ^= "list_describe_"]
+{
+	height: 350px;	
+	padding: 15px;
+}
+
+.categorie_intro_list_2, .list_describe_2
+{
+	background-color: #c5d5c5;		/* light grey-green */
+	color : #364a36;
+}
+
+.categorie_intro_list_1, .list_describe_1
+{
+	background-color: #7e7d67;		/* brown */
+	color : #eaece5;
+}
+
+.categorie_intro_list_0, .list_describe_0
+{
+	background-color: #eaece5;		/* light grey */
+	color : #454a36;
+}
+
+.list_describe_2
+{
+	background-color: rgba(197, 213, 197, 0.7);
+}
