@@ -70,4 +70,21 @@ div[class^="zone"]
 	margin: 10px;
 }
 
-/* */
+/* ahead button */
+#ahead_button
+{
+	color: white;
+	text-shadow: 1px 1px #3b3a30;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 90px;
+	transition: 0.3s;
+}
+
+#ahead_button:hover
+{
+	cursor: pointer;
+	transition: 0.3s;
+}
+

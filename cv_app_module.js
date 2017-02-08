@@ -1,35 +1,9 @@
 var cv_app = angular.module("CV_App", []);
 
-function		categorie(id, name, display_type, description_obj)
-{
-	this.id = id;
-	this.name = name;
-	this.description = description_obj;
-	this.display_type = display_type;
-	this.class_id = id % 3;
-}
-
-function		description(name, content)
-{
-	this.name = name;
-	this.content = content;
-}
-
-function		get_categorie_color(id)
-{
-	res = id % 3;
-	if (res == 0)
-		color = "#eaece5";
-	else if (res == 1)
-		color = "#3b3a30";
-	else
-		color = "#c5d5c5";
-	return (color);
-}
-
 cv_app.controller("CV_Ctrl", function ($scope)
 {
 	var i = 0;
+
 	$scope.categorie_list = [new categorie(i += 1, "Langagues de programmation", "boxes",
 											[
 							 					new description("C", "★★★★☆"),
@@ -99,6 +73,17 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 				])
 							 ]
 
-	/* onload */
+
+	/* display function */
+
+	$scope.smooth_roll = function (button_id)
+	{
+		div_id = "#div_" + button_id;
+		console.log(div_id);
+		$('html,body').animate({
+									scrollTop: $(div_id).offset().top
+							   },
+							   'slow');
+	}
 
 });

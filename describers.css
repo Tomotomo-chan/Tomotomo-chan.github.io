@@ -8,7 +8,7 @@
 }
 
 /* description types */
-.description_boxes
+[class^=description_boxes]
 {
 	float: left;
 	border: 1px solid #3b3a30;
@@ -19,11 +19,21 @@
 	transition: 0.3s;
 }
 
-.description_boxes:hover
+[class^=description_boxes]:hover
 {
 	background-color: #3b3a30;
 	opacity: 0.7;
 	transition: 0.3s;
+}
+
+.description_boxes_2
+{
+	border: 1px solid #eaece5;
+}
+
+.description_boxes_2:hover
+{
+	background-color: #eaece5;
 }
 
 .description_list
