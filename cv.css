@@ -11,6 +11,8 @@ body
 	font-family: 'Raleway';
 	background-image: url('bamboo.jpg');
 	animation: defile 10s;
+	word-wrap: break-word;
+	hyphens: auto;
 }
 
 img
@@ -53,7 +55,6 @@ div[class^="zone"]
 	margin: 0px;
 	max-width: 100%;
 	padding : 10px;
-	height: 200px;
 }
 
 .zone_header
@@ -67,7 +68,7 @@ div[class^="zone"]
 {
 	background-color: #3b3a30;	/* brown */
 	display: block;
-	margin: 10px;
+	margin: auto;
 }
 
 /* ahead button */
@@ -88,3 +89,85 @@ div[class^="zone"]
 	transition: 0.3s;
 }
 
+@media all and (min-width: 2330px)
+{
+	div[class^="zone"]
+	{
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 1930px) and (max-width: 2330px)
+{
+	div[class^="zone"]
+	{
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 1570px) and (max-width: 1930px)
+{
+	div[class^="zone"]
+	{
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 1270px) and (max-width: 1570px)
+{
+	div[class^="zone"]
+	{
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 1170px) and (max-width: 1270px)
+{
+	div[class^="zone"]
+	{
+		height: 200px;
+	}
+}
+
+@media all and (min-width: 1070px) and (max-width: 1170px)
+{
+	.zone_intro
+	{
+		height: 250px;
+	}
+}
+
+@media all and (min-width: 950px) and (max-width: 1070px)
+{
+	.zone_intro
+	{
+		height: 250px;
+	}
+	
+}
+
+@media all and (min-width: 640px) and (max-width: 950px)
+{
+	.zone_intro
+	{
+		height: 250px;
+	}
+
+
+}
+
+@media all and (max-width: 640px)
+{
+	.zone_intro
+	{
+		height: 350px;
+	}
+}
+
+@media all and (max-width: 370px)
+{
+	.zone_intro
+	{
+		height: 500px;
+	}
+}
