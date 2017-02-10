@@ -119,6 +119,11 @@
 		width: 23%;
 		height: 110px;
 	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 500px;
+	}
 }
 
 

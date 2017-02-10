@@ -8,11 +8,13 @@
 }
 
 /* description types */
+
+/* boxes */
 [class^=description_boxes]
 {
 	float: left;
 	border: 1px solid #3b3a30;
-	width: 260px;
+	width: 23%;
 	height: 80px;
 	margin: 2px;
 	padding: 5px;
@@ -36,11 +38,14 @@
 	background-color: #eaece5;
 }
 
+/* lists */
 .description_list
 {
 }
 
+
 /* desctiption write */
+
 .sub_description_title
 {
 	opacity: 1;
@@ -56,3 +61,63 @@
 	font-size: 20px;
 	font-weight: thick;
 }
+
+@media all and (min-width: 2330px)
+{
+
+}
+
+@media all and (min-width: 1930px) and (max-width: 2330px)
+{
+
+}
+
+@media all and (min-width: 1570px) and (max-width: 1930px)
+{
+
+}
+
+@media all and (min-width: 1270px) and (max-width: 1570px)
+{
+
+}
+
+@media all and (min-width: 1170px) and (max-width: 1270px)
+{
+
+}
+
+@media all and (min-width: 1070px) and (max-width: 1170px)
+{
+
+}
+
+@media all and (min-width: 950px) and (max-width: 1070px)
+{
+	[class^=description_boxes]
+	{
+		width: 30%;
+		height: 80px;
+	}
+}
+
+@media all and (max-width: 950px)
+{
+
+}
+
+@media all and (min-width: 640px) and (max-width: 768px)
+{
+
+}
+
+@media all and (min-width: 370px) and (max-width: 640px)
+{
+
+}
+
+@media all and (max-width: 370px)
+{
+
+}
+
