@@ -178,3 +178,11 @@ div[class^="zone"]
 		height: 500px;
 	}
 }
+
+@media screen and (max-device-width: 768px)
+{
+	.zone_intro
+	{
+		height: 300px;
+	}
+}
