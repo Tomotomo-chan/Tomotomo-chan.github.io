@@ -51,7 +51,7 @@
 .list_describe_2
 {
 	/* transparent image */
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url('bamboo.jpg');
+	background-image: linear-gradient(to bottom, rgba(197, 213, 197, 0.7) 0%,rgba(197, 213, 197, 0.7) 100%), url('bamboo.jpg');
 	animation: defile 10s;
 }
 
