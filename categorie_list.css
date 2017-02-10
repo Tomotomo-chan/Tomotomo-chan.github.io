@@ -32,26 +32,26 @@
 
 .categorie_intro_list_2, .list_describe_2
 {
-	background-color: #c5d5c5;		/* light grey-green */
-	color : #364a36;
+	background-color: #d9ad7c;		/* yellow/brown  */
+	color : #30241c;
 }
 
 .categorie_intro_list_1, .list_describe_1
 {
-	background-color: #7e7d67;		/* brown */
-	color : #eaece5;
+	background-color: #674d3c;		/* brown */
+	color : #fff2df;
 }
 
 .categorie_intro_list_0, .list_describe_0
 {
-	background-color: #eaece5;		/* light grey */
-	color : #454a36;
+	background-color: #fff2df;		/* light brown */
+	color : #674d3c;
 }
 
 .list_describe_2
 {
 	/* transparent image */
-	background-image: linear-gradient(to bottom, rgba(197, 213, 197, 0.7) 0%,rgba(197, 213, 197, 0.7) 100%), url('bamboo.jpg');
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.3) 0%,rgba(255, 255, 255,0.3) 100%), url('orange.jpg');
 	animation: defile 10s;
 }
 

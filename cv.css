@@ -1,7 +1,7 @@
 @keyframes defile
 {
 	from {background-position: 0px 0px;}
-	to {background-position: 1920px 0px;}
+	to {background-position: 1600px 0px;}	/* size of the image */
 }
 
 body
@@ -27,7 +27,7 @@ a
 
 a:hover
 {
-	color: #c5d5c5;
+	color: #d9ad7c;
 	text-shadow: 1px 1px black;
 }
 
@@ -58,8 +58,8 @@ div[class^="zone"]
 
 .zone_header
 {
-	color: #f0f0f0;				/* light green */
-	background-image: url('bamboo.jpg');
+	color: #f0f0f0;				/* light yellow */
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255,0.2) 0%,rgba(255, 255, 255,0.2) 100%), url('orange.jpg');
 	animation: defile 10s;
 }
 
@@ -67,7 +67,7 @@ div[class^="zone"]
 
 .zone_intro
 {
-	background-color: #3b3a30;	/* brown */
+	background-color: #201813;	/* brown */
 	display: block;
 	margin: auto;
 }
@@ -76,7 +76,7 @@ div[class^="zone"]
 #ahead_button
 {
 	color: white;
-	text-shadow: 1px 1px #3b3a30;
+	text-shadow: 1px 1px #201813;
 	position: fixed;
 	bottom: 10px;
 	right: 10px;

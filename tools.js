@@ -31,10 +31,10 @@ function		get_categorie_color(id)
 {
 	res = id % 3;
 	if (res == 0)
-		color = "#eaece5";
+		color = "#fff2df";
 	else if (res == 1)
-		color = "#3b3a30";
+		color = "#201813";
 	else
-		color = "#c5d5c5";
+		color = "#d9ad7c";
 	return (color);
 }

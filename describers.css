@@ -13,7 +13,7 @@
 [class^=description_boxes]
 {
 	float: left;
-	border: 1px solid #3b3a30;
+	border: 1px solid #201813;
 	width: 23%;
 	height: 80px;
 	margin: 2px;
@@ -23,19 +23,19 @@
 
 [class^=description_boxes]:hover
 {
-	background-color: #3b3a30;
+	background-color: #201813;
 	opacity: 0.7;
 	transition: 0.3s;
 }
 
 .description_boxes_2
 {
-	border: 1px solid #eaece5;
+	border: 1px solid #fff2df;
 }
 
 .description_boxes_2:hover
 {
-	background-color: #eaece5;
+	background-color: #fff2df;
 }
 
 /* lists */
