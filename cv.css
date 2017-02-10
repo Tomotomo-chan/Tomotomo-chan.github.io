@@ -9,10 +9,9 @@ body
 	margin: 0px;
 	font-size: 18px;
 	font-family: 'Raleway';
-	background-image: url('bamboo.jpg');
-	animation: defile 10s;
 	word-wrap: break-word;
 	hyphens: auto;
+	background-color: rgba(197, 213, 197);
 }
 
 img
@@ -60,6 +59,8 @@ div[class^="zone"]
 .zone_header
 {
 	color: #f0f0f0;				/* light green */
+	background-image: url('bamboo.jpg');
+	animation: defile 10s;
 }
 
 /* introduction */
