@@ -115,7 +115,7 @@
 	}
 }
 
-@media all and (min-width: 640px) and (max-width: 768px)
+@media all and (min-width: 640px) and (max-width: 768px) and (max-device-width: 768px)
 {
 	[class^=description_boxes]
 	{
