@@ -146,17 +146,23 @@ div[class^="zone"]
 	
 }
 
-@media all and (min-width: 640px) and (max-width: 950px)
+@media all and (min-width: 768px) and (max-width: 950px)
 {
 	.zone_intro
 	{
-		height: 250px;
+		height: 300px;
 	}
-
-
 }
 
-@media all and (max-width: 640px)
+@media all and (min-width: 640px) and (max-width: 768px)
+{
+	.zone_intro
+	{
+		height: 300px;
+	}
+}
+
+@media all and (min-width: 370px) and (max-width: 640px)
 {
 	.zone_intro
 	{

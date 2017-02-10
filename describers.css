@@ -89,6 +89,11 @@
 
 @media all and (min-width: 1070px) and (max-width: 1170px)
 {
+	[class^=description_boxes]
+	{
+		width: 31%;
+		height: 80px;
+	}
 
 }
 
@@ -96,28 +101,49 @@
 {
 	[class^=description_boxes]
 	{
-		width: 30%;
+		width: 31%;
 		height: 80px;
 	}
 }
 
-@media all and (max-width: 950px)
+@media all and (min-width: 768px) and (max-width: 950px)
 {
-
+	[class^=description_boxes]
+	{
+		width: 31%;
+		height: 80px;
+	}
 }
 
 @media all and (min-width: 640px) and (max-width: 768px)
 {
-
+	[class^=description_boxes]
+	{
+		width: 45%;
+		height: 70px;
+	}
 }
 
 @media all and (min-width: 370px) and (max-width: 640px)
 {
-
+	[class^=description_boxes]
+	{
+		width: 45%;
+		height: 75px;
+	}
 }
 
 @media all and (max-width: 370px)
 {
+	[class^=description_boxes]
+	{
+		width: 95%;
+		height: 73px;
+	}
 
+	.sub_description_title
+	{
+		font-size: 25px;
+	}
 }
 

@@ -67,7 +67,7 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 					new description("Le dessin", ""),
 							 					new description("Voyager", ""),
 							 					new description("Les arts manuels", ""),
-							 					new description("La lecture", "Romans (♡: les Chroniques de l'Armagedon), Mangas..."),
+							 					new description("La lecture", "Romans, Mangas..."),
 							 					new description("La musique", "(10 ans de flute traversière)"),
 							 					new description("La gymnastique aux agrès", "")
 							 				])

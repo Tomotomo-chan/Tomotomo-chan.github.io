@@ -110,6 +110,11 @@
 		height: 110px;
 
 	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 450px;
+	}
 }
 
 @media all and (min-width: 950px) and (max-width: 1070px)
@@ -122,18 +127,23 @@
 
 	[class ^= "list_describe_"]
 	{
-		height: 500px;
+		height: 450px;
 	}
 }
 
 
-@media all and (max-width: 950px)
+@media all and (min-width: 768px) and (max-width: 950px)
 {
 	[class ^= "categorie_intro_list_"]
 	{
 		font-size: 20px;
 		width: 23%;
-		height: 110px;
+		height: 130px;
+	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 450px;
 	}
 }
 
@@ -144,7 +154,12 @@
 	{
 		width: 45%;
 		height: auto;
-		min-height: 50px;
+		height: 60px;
+	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 600px;
 	}
 }
 
@@ -152,10 +167,15 @@
 {
 	[class ^= "categorie_intro_list_"]
 	{
-		font-size: 15px;
+		font-size: 20px;
 		width: 45%;
 		height: auto;
 		min-height: 75px;
+	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 600px;
 	}
 }
 
@@ -163,10 +183,15 @@
 {
 	[class ^= "categorie_intro_list_"]
 	{
-		font-size: 15px;
+		font-size: 18px;
 		width: 45%;
 		height: auto;
 		min-height: 110px;
+	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 1000px;
 	}
 }
 
