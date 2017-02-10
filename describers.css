@@ -139,16 +139,3 @@
 	}
 }
 
-@media all and (max-width: 370px)
-{
-	[class^=description_boxes]
-	{
-		width: 95%;
-		height: 73px;
-	}
-
-	.sub_description_title
-	{
-		font-size: 25px;
-	}
-}
