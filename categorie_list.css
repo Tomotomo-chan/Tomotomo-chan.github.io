@@ -45,7 +45,7 @@
 .categorie_intro_list_0, .list_describe_0
 {
 	background-color: #fff2df;		/* light brown */
-	color : #674d3c;
+	color : #201813;
 }
 
 .list_describe_2
@@ -177,7 +177,7 @@
 
 	[class ^= "list_describe_"]
 	{
-		height: 600px;
+		height: 700px;
 	}
 }
 
@@ -193,6 +193,6 @@
 
 	[class ^= "list_describe_"]
 	{
-		height: 1000px;
+		height: 900px;
 	}
 }
