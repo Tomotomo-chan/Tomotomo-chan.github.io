@@ -115,7 +115,7 @@
 	}
 }
 
-@media all and (min-width: 640px) and (max-width: 768px) and (max-device-width: 768px)
+@media all and (min-width: 640px) and (max-width: 768px)
 {
 	[class^=description_boxes]
 	{
@@ -147,3 +147,12 @@
 	}
 }
 
+/* mobile phone */
+@media screen and (max-device-width: 768px)
+{
+		[class^=description_boxes]
+	{
+		width: 45%;
+		height: 70px;
+	}
+}

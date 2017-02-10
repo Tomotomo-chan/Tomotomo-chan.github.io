@@ -197,3 +197,19 @@
 	}
 }
 
+/* mobile */
+@media screen and (max-device-width: 768px)
+{
+		[class ^= "categorie_intro_list_"]
+	{
+		width: 45%;
+		height: auto;
+		height: 60px;
+	}
+
+	[class ^= "list_describe_"]
+	{
+		height: 600px;
+	}
+}
+
