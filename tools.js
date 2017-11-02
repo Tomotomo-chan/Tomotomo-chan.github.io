@@ -33,7 +33,7 @@ function		get_categorie_color(id)
 	if (res == 0)
 		color = "#fff2df";
 	else if (res == 1)
-		color = "#201813";
+		color = "#bc5a45";
 	else
 		color = "#d9ad7c";
 	return (color);

@@ -12,20 +12,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat:300" rel="stylesheet">
 
 	<!-- JS SCRIPTS -->
 	<script type="text/javascript" src="description_box.js"></script>
 	<script type="text/javascript" src="tools.js"></script>
-	
+
 	<script type="text/javascript" src="cv_app_module.js"></script>
 
 	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="cv.css">
-	<link rel="stylesheet" type="text/css" href="categorie_list.css">
-	<link rel="stylesheet" type="text/css" href="describers.css">
-
+	<link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
@@ -34,12 +30,15 @@
 <!-- Header -->
 
 	<div class="zone_header">
-		<h1>Mathilde Ressier</h1>
-		<h4>
-			✉ : <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a><br>
-			☎ : 06 47 87 34 00<br>
-			Statut: Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015)<br>
-		</h4>
+		<img class="img_profile" src="https://cdn.intra.42.fr/users/small_mressier.jpg">
+		<div class="text_profile">
+			<h1>Mathilde Ressier</h1>
+			<h4>
+				✉ : <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a><br>
+				☎ : 06 47 87 34 00<br>
+				Statut: Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015) <br> Recherche d'un temps partiel de Novembre 2017 à Avril 2018<br>
+			</h4>
+		</div>
 	</div>
 
 <!-- Categories click point -->
@@ -52,15 +51,15 @@
 
 <!-- Go ahead button -->
 
-	<div id="ahead_button" onclick="scroll_top()" title="Revenir au début">
+	<!-- <div id="ahead_button" onclick="scroll_top()" title="Revenir au début">
 		<span>☝</span>
-	</div>
+	</div> -->
 
 <!-- Categories details -->
 
 	<div ng-attr-id="{{ 'div_' + categorie.id }}" class="list_describe_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
 		<span class="describe_title">{{categorie.name}}</span>
-		
+
 		<br><br>
 
 		<div class="description_{{categorie.display_type}}_{{categorie.class_id}}" ng-repeat='description in categorie.description'>
