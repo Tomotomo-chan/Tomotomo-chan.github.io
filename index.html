@@ -15,13 +15,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat:300" rel="stylesheet">
 
 	<!-- JS SCRIPTS -->
-	<script type="text/javascript" src="description_box.js"></script>
-	<script type="text/javascript" src="tools.js"></script>
+	<script type="text/javascript" src="categorie-description.js"></script>
 
 	<script type="text/javascript" src="cv_app_module.js"></script>
 
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="intro.css">
+	<link rel="stylesheet" type="text/css" href="categorie.css">
 
 </head>
 
@@ -29,25 +30,43 @@
 
 <!-- Header -->
 
-	<div class="zone_header">
-		<img class="img_profile" src="https://cdn.intra.42.fr/users/small_mressier.jpg">
-		<div class="text_profile">
-			<h1>Mathilde Ressier</h1>
-			<h4>
-				✉ : <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a><br>
-				☎ : 06 47 87 34 00<br>
-				Statut: Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015) <br> Recherche d'un temps partiel de Novembre 2017 à Avril 2018<br>
-			</h4>
+	<div class="background_zone">
+		<div class="zone_header">
+			<img class="img_profile" src="https://cdn.intra.42.fr/users/small_mressier.jpg">
+			<div class="text_profile">
+				<h1>Mathilde Ressier</h1>
+				<h4>
+					✉ : <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a><br>
+					☎ : 06 47 87 34 00<br>
+					Statut: Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015) <br> Recherche d'un temps partiel de Novembre 2017 à Avril 2018<br>
+				</h4>
+			</div>
+		</div>
+
+		<!-- Categories click point -->
+
+		<div class="zone_intro">
+			<div ng-attr-id="{{ 'button_' + categorie.id }}" class="categorie_intro_list {{categorie.class_id}}" ng-repeat='categorie in categorie_list' ng-click="smooth_roll(categorie.id)" title="Accède directement à {{categorie.name}}">
+				<div class="select_item"></div>
+				<span>{{categorie.name}}</span>
+			</div>
+		</div>
+
+		<div ng-attr-id="{{ 'div_' + categorie.id }}" class="div_categorie_list {{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
+			<h2>{{categorie.name}}</h2>
+			<span class="categorie_subtitle">{{categorie.subtitle}}<br><br></span>
+
+<!-- Categories details -->
+			<div class="content {{categorie.display_type}} {{categorie.class_id}}" ng-repeat='content in categorie.content'>
+				<div class="sub_description_title">
+					<span ng-if="categorie.display_type == 'list'">&#8674; </span> {{content.name}}
+				</div>
+				<span class="description_content">{{content.details}}</span>
+			</div>
+
 		</div>
 	</div>
 
-<!-- Categories click point -->
-
-	<div class="zone_intro">
-		<div ng-attr-id="{{ 'button_' + categorie.id }}" class="categorie_intro_list_{{categorie.class_id}}" ng-repeat='categorie in categorie_list' ng-click="smooth_roll(categorie.id)" title="Accède directement à {{categorie.name}}">
-			<span>{{categorie.name}}</span>
-		</div>
-	</div>
 
 <!-- Go ahead button -->
 
@@ -55,19 +74,8 @@
 		<span>☝</span>
 	</div> -->
 
-<!-- Categories details -->
 
-	<div ng-attr-id="{{ 'div_' + categorie.id }}" class="list_describe_{{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
-		<span class="describe_title">{{categorie.name}}</span>
-
-		<br><br>
-
-		<div class="description_{{categorie.display_type}}_{{categorie.class_id}}" ng-repeat='description in categorie.description'>
-			<div class="sub_description_title">{{description.name}}</div>
-			<span class="description_content">{{description.content}}</span>
-		</div>
-
-	</div>
+	
 
 </body>
 

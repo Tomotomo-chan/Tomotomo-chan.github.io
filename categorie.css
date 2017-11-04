@@ -1,0 +1,49 @@
+.description
+{
+
+}
+
+.div_categorie_list
+{
+	margin: auto;
+	align-items: center;
+	margin-top: 10px;
+	padding: 10px;
+	background: black;
+}
+
+.div_categorie_list h2
+{
+	color: white;
+	/*border-bottom: solid 2px white;*/
+}
+
+.categorie_subtitle
+{
+	font-size: 12px;
+}
+
+.div_categorie_list .boxes
+{
+	border-bottom: solid 1px white;
+	width: 20vw;
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+}
+
+.div_categorie_list .list
+{
+	padding-bottom: 20px
+}
+
+.sub_description_title
+{
+	padding: 2px;
+	font-size: 18px;
+}
+
+.description_content
+{
+	font-size: 13px;
+}
