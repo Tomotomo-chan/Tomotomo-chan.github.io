@@ -10,12 +10,13 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 					new content("C", "★★★☆"),
 												new content("Script shell", "★★★☆"),
 							 					new content("UNIX", "★★☆☆"),
-							 					new content("C++", "★★☆☆☆"),
+							 					new content("C++", "★★☆☆"),
 												new content("Swift", "★★☆☆"),
 												new content("Python", "★☆☆☆"),
-												new content("Front End", "★ HTML/CSS/AngularJS/Angular2"),
-												new content("Back End", "★ NodeJS, PHP"),
-												new content("Base De Données", "★ Mongoose, MySQL")
+												new content("HTML CSS", "★★★☆"),
+												new content("AngularJS / 2", "★☆☆☆"),
+												new content("Node JS / PHP", "★☆☆☆"),
+												new content("BDD - Mongoose, MySQL", "★☆☆☆")
 											]),
 							 new categorie(i += 1, "Parcours scolaire et expériences professionnelles", "", categorie_display.LIST,
 							 				[
@@ -33,7 +34,7 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 new categorie(i += 1, "Quelques projets", "", categorie_display.LIST,
 							 				[
 							 					new content("42sh (C)", "Développement d'un shell type Bash au complet (affichage avec termcaps)"),
-							 					new content("libftASM (assembleur)", "Création d'une petite librairie en assembleur pour découvrir le langage et les principes de très bas niveau."),
+							 					new content("libASM (assembleur)", "Création d'une petite librairie en assembleur pour découvrir le langage et les principes de très bas niveau."),
 							 					new content("Swifty Companion (Swift - iOS)", "Réalisation d'une application permettant de lister les infos des élèves en utilisant l'API de l'école"),
 							 					new content("Piscine CPP", "Le but est d'aborder les concepts de base de la POO à travers les spécifités du C++"),
 							 					new content("PiggyBox (Angular2/NodeJS/Mongoose)", "Conception d'un site personnel permettant de gérer son budget")
@@ -69,9 +70,10 @@ cv_app.controller("CV_Ctrl", function ($scope)
 	$scope.smooth_roll = function (button_id)
 	{
 		div_id = "#div_" + button_id;
-		console.log(div_id);
+
 		$('html,body').animate({ scrollTop: $(div_id).offset().top  },
 							   'slow');
+		
 	}
 
 });

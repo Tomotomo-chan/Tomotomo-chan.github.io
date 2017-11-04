@@ -6,7 +6,6 @@
 
 	<!-- Angular js include -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-	<script src="lib/angular/angular-sanitize.min.js"></script>
 
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,6 +23,9 @@
 	<link rel="stylesheet" type="text/css" href="intro.css">
 	<link rel="stylesheet" type="text/css" href="categorie.css">
 
+	<!-- icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body ng-app="CV_App" ng-controller="CV_Ctrl">
@@ -32,15 +34,29 @@
 
 	<div class="background_zone">
 		<div class="zone_header">
-			<img class="img_profile" src="https://cdn.intra.42.fr/users/small_mressier.jpg">
-			<div class="text_profile">
-				<h1>Mathilde Ressier</h1>
-				<h4>
-					✉ : <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a><br>
-					☎ : 06 47 87 34 00<br>
-					Statut: Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015) <br> Recherche d'un temps partiel de Novembre 2017 à Avril 2018<br>
-				</h4>
+			<div class="img_profile_div">
+				<img class="img_profile" src="https://cdn.intra.42.fr/users/medium_mressier.jpg">
 			</div>
+			<div class="text_profile_div">
+				
+					<h2 class="my_name">Mathilde Ressier</h2>
+					<div class="profile_data">
+						<h3>Recherche d'un temps partiel de Novembre 2017 à Avril 2018</h3>
+					</div>
+					<div class="profile_data">
+						<i class="material-icons">email</i> <a href="mailto:mressier@student.42.fr" title="Envoyez moi un mail!">mressier@student.42.fr</a>
+					</div>
+					<div class="profile_data">
+						<i class="material-icons">local_phone</i> 06 47 87 34 00
+					</div>
+					<div class="profile_data">
+						<i class="material-icons">my_location</i> Clichy, Paris 
+					</div>
+					<div class="profile_data">
+						<i class="material-icons">assignment_ind</i> Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015 - level 16.75%)
+						<a href="https://cv.42.fr/mressier">(voir mon profil)</a>
+					</div>
+				</div>
 		</div>
 
 		<!-- Categories click point -->
@@ -53,7 +69,7 @@
 		</div>
 
 		<div ng-attr-id="{{ 'div_' + categorie.id }}" class="div_categorie_list {{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
-			<h2>{{categorie.name}}</h2>
+			<h2 >{{categorie.name}}</h2>
 			<span class="categorie_subtitle">{{categorie.subtitle}}<br><br></span>
 
 <!-- Categories details -->
@@ -63,16 +79,15 @@
 				</div>
 				<span class="description_content">{{content.details}}</span>
 			</div>
-
 		</div>
 	</div>
 
 
 <!-- Go ahead button -->
 
-	<!-- <div id="ahead_button" onclick="scroll_top()" title="Revenir au début">
-		<span>☝</span>
-	</div> -->
+	<div id="ahead_button" onclick="scroll_top()" title="Revenir au début">
+		&#8648;
+	</div>
 
 
 	

@@ -1,21 +1,21 @@
-.description
-{
-
-}
-
+/* categories */
 .div_categorie_list
 {
 	margin: auto;
 	align-items: center;
 	margin-top: 10px;
 	padding: 10px;
-	background: black;
+	background-color: black;
+	background-image: url("42-bg.gif");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
 .div_categorie_list h2
 {
 	color: white;
-	/*border-bottom: solid 2px white;*/
+	color: #39d88f;
 }
 
 .categorie_subtitle
@@ -25,7 +25,6 @@
 
 .div_categorie_list .boxes
 {
-	border-bottom: solid 1px white;
 	width: 20vw;
 	display: inline-block;
 	padding: 10px;
