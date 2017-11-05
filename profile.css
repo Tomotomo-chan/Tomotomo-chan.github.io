@@ -31,12 +31,12 @@
 }
 
 
-@media all and (min-width: 760px) and (max-width: 980px)
+@media all and (min-width: 761px) and (max-width: 980px)
 {
 
 }
 
-@media all and (min-width: 615px) and (max-width: 760px)
+@media all and (min-width: 621px) and (max-width: 760px)
 {
 	.text_profile_div
 	{
@@ -44,7 +44,7 @@
 	}
 }
 
-@media all and (min-width: 480px) and (max-width: 615px)
+@media all and (min-width: 481px) and (max-width: 620px)
 {
 	.text_profile_div
 	{

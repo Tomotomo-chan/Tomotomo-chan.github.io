@@ -55,13 +55,3 @@ a:hover
 	cursor: pointer;
 	color: darkgrey;
 }
-
-@media all and (min-width: 760px) and (max-width: 980px)
-{
-
-}
-
-@media all and (max-width: 760px)
-{
-	
-}
