@@ -18,7 +18,7 @@ cv_app.controller("CV_Ctrl", function ($scope)
 												new content("Node JS / PHP", "★☆☆☆"),
 												new content("BDD - Mongoose, MySQL", "★☆☆☆")
 											]),
-							 new categorie(i += 1, "Parcours scolaire et expériences professionnelles", "", categorie_display.LIST,
+							 new categorie(i += 1, "Scolarité et expériences professionnelles", "", categorie_display.LIST,
 							 				[
 												new content("Baccalaureat STI2D (*) (mention Tres Bien)", "(*) Sciences et Technologies de l'Industrie et du Développement Durable. Lycée Monge, Savigny sur Orge (91)"),
 												new content("Ecole 42", "\"Sa pédagogie, c’est le peer-to-peer learning : un fonctionnement participatif qui permet aux étudiants de libérer toute leur créativité grâce à l’apprentissage par projets.[...]\""),
@@ -29,7 +29,8 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 					new content("Programmation Orientée Objet", "En C++, PHP, javascript, swift et python"),
 							 					new content("Structures de données", "listes chainées, arbre binaire, structures, dictionnaire, tuples, etc."),
 							 					new content("Threads", "thread, mutex, conditions, barrier"),
-							 					new content("API REST", "Framework slim en php, "),
+							 					new content("API REST", "Framework slim en php, express en nodeJs"),
+							 					new content("Tests unitaires", "Création systématique de tests unitaires ou e2e (C, script shell, jasmine pour le web et frisby pour les APIS)"),
 							 				]),
 							 new categorie(i += 1, "Quelques projets", "", categorie_display.LIST,
 							 				[
@@ -41,7 +42,6 @@ cv_app.controller("CV_Ctrl", function ($scope)
 							 				]),
 							 new categorie(i += 1, "Outils", "", categorie_display.LIST,
 							 				[
-							 					new content("Tests unitaires", "Création systématique de tests unitaires ou e2e (C, script shell, jasmine pour le web et frisby pour les APIS)"),
 							 					new content("Utilisation quotidienne de Git", ""),
 							 					new content("Gestion des projets avec Trello", "")
 							 				]),

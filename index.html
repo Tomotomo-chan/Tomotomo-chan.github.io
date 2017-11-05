@@ -20,6 +20,7 @@
 
 	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="profile.css">
 	<link rel="stylesheet" type="text/css" href="intro.css">
 	<link rel="stylesheet" type="text/css" href="categorie.css">
 
@@ -39,7 +40,7 @@
 			</div>
 			<div class="text_profile_div">
 				
-					<h2 class="my_name">Mathilde Ressier</h2>
+					<h2 class="my_name">Mathilde Ressier - 21 ans</h2>
 					<div class="profile_data">
 						<h3>Recherche d'un temps partiel de Novembre 2017 à Avril 2018</h3>
 					</div>
@@ -54,7 +55,10 @@
 					</div>
 					<div class="profile_data">
 						<i class="material-icons">assignment_ind</i> Etudiante à <a href="http://www.42.fr/" title="Visitez le site de l'école">42</a> (promo 2015 - level 16.75%)
-						<a href="https://cv.42.fr/mressier">(voir mon profil)</a>
+						<!-- <a href="https://cv.42.fr/mressier">(voir mon profil)</a> -->
+					</div>
+					<div class="profile_data">
+						<a target="_blank" type="application/octet-stream" download="./CV_pdf.pdf" href="./CV_pdf.pdf">Download as PDF</a>
 					</div>
 				</div>
 		</div>
@@ -63,14 +67,13 @@
 
 		<div class="zone_intro">
 			<div ng-attr-id="{{ 'button_' + categorie.id }}" class="categorie_intro_list {{categorie.class_id}}" ng-repeat='categorie in categorie_list' ng-click="smooth_roll(categorie.id)" title="Accède directement à {{categorie.name}}">
-				<div class="select_item"></div>
 				<span>{{categorie.name}}</span>
 			</div>
 		</div>
 
 		<div ng-attr-id="{{ 'div_' + categorie.id }}" class="div_categorie_list {{categorie.class_id}}" ng-repeat='categorie in categorie_list'>
-			<h2 >{{categorie.name}}</h2>
-			<span class="categorie_subtitle">{{categorie.subtitle}}<br><br></span>
+			<h2>{{categorie.name}}</h2>
+			<div class="categorie_subtitle">{{categorie.subtitle}}</div>
 
 <!-- Categories details -->
 			<div class="content {{categorie.display_type}} {{categorie.class_id}}" ng-repeat='content in categorie.content'>

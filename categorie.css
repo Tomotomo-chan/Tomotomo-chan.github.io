@@ -21,11 +21,12 @@
 .categorie_subtitle
 {
 	font-size: 12px;
+	padding-bottom: 25px;
 }
 
 .div_categorie_list .boxes
 {
-	width: 20vw;
+	width: 22%;
 	display: inline-block;
 	padding: 10px;
 	margin: 5px;
@@ -45,4 +46,34 @@
 .description_content
 {
 	font-size: 13px;
+}
+
+@media all and (min-width: 760px) and (max-width: 980px)
+{
+
+}
+
+@media all and (min-width: 615px) and (max-width: 760px)
+{
+	.div_categorie_list .boxes
+	{
+		width: 27%;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 615px)
+{
+	.div_categorie_list .boxes
+	{
+		width: 40%;
+	}
+}
+
+@media all and (max-width: 480px)
+{
+	.div_categorie_list .boxes
+	{
+		width: 40%;
+	}
+
 }
