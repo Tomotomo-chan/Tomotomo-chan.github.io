@@ -11,11 +11,11 @@ cv_app.controller("CV_Ctrl", function ($scope)
 												new content("Script shell", "★★★☆"),
 							 					new content("UNIX", "★★☆☆"),
 							 					new content("C++", "★★☆☆"),
+							 					new content("Javascript / Node JS", "★★☆☆"),
 												new content("Swift", "★★☆☆"),
 												new content("Python", "★☆☆☆"),
 												new content("HTML CSS", "★★★☆"),
-												new content("AngularJS / 2", "★☆☆☆"),
-												new content("Node JS / PHP", "★☆☆☆"),
+												new content("AngularJS / ReactJS", "★☆☆☆"),
 												new content("BDD - Mongoose, MySQL", "★☆☆☆")
 											]),
 							 new categorie(i += 1, "Scolarité et expériences professionnelles", "", categorie_display.LIST,
