@@ -1,0 +1,45 @@
+body {
+  background-image: url("https://static.pexels.com/photos/414160/pexels-photo-414160.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bigTitle, #subTitle {
+  color: white;
+  text-align: center;
+}
+
+#bigTitle {
+  margin-top: 20vw;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+}
+
+#subTitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+}
+
+#bigTitle {
+  animation: showup 5s;
+  animation-fill-mode: forwards;
+}
+
+#subTitle {
+  animation: showdown 5s;
+  animation-fill-mode: forwards;
+}
+
+/* Animation */
+@keyframes showup {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {margin-top: 15vw}
+}
+
+@keyframes showdown {
+  0% {opacity: 0; margin-top: -50px}
+  20% {opacity: 0; margin-top: -50px}
+  70% {opacity: 1;}
+  100% {margin-top: 10px;}
+}
