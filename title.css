@@ -2,6 +2,7 @@ body {
   background-image: url("https://static.pexels.com/photos/414160/pexels-photo-414160.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Josefin Slab'
 }
 
 #bigTitle, #subTitle {
