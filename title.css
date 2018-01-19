@@ -1,46 +1,100 @@
 body {
-  background-image: url("https://static.pexels.com/photos/414160/pexels-photo-414160.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Josefin Slab'
+    background-image: url('https://static.pexels.com/photos/414160/pexels-photo-414160.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Slab';
 }
 
-#bigTitle, #subTitle {
-  color: white;
-  text-align: center;
+.buttons {
+    background-color: #000066;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 100%;
+    padding: 10px 5px 10px 5px;
+    border: 1px solid white;
+    outline: 5px solid #000066;
+}
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+#mainTitle {
+    transition-duration: 5s;
+}
+
+#bigTitle,
+#subTitle {
+    color: white;
+    text-align: center;
 }
 
 #bigTitle {
-  margin-top: 20vw;
-  font-family: 'Pacifico', cursive;
-  font-size: 70px;
+    margin-top: 20vw;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
 }
 
 #subTitle {
-  font-family: 'Dancing Script', cursive;
-  font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
 }
 
 #bigTitle {
-  animation: showup 5s;
-  animation-fill-mode: forwards;
+    animation: showup 5s;
+    animation-fill-mode: forwards;
 }
 
 #subTitle {
-  animation: showdown 5s;
-  animation-fill-mode: forwards;
+    animation: showdown 5s;
+    animation-fill-mode: forwards;
+}
+
+#showProgBtn {
+    margin: auto;
+    text-align: center;
+    animation: btnshowup 10s;
+    margin-top: 50px;
 }
 
 /* Animation */
 @keyframes showup {
-    0% {opacity: 0}
-    50% {opacity: 1}
-    100% {margin-top: 15vw}
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 15vw;
+    }
 }
 
 @keyframes showdown {
-  0% {opacity: 0; margin-top: -50px}
-  20% {opacity: 0; margin-top: -50px}
-  70% {opacity: 1;}
-  100% {margin-top: 10px;}
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    20% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 10px;
+    }
+}
+
+@keyframes btnshowup {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

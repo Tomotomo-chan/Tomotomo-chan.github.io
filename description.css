@@ -1,93 +1,106 @@
 .card {
-  margin: auto;
-  margin-top: 30px;
-  text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+    transition-duration: 5s;
+}
+
+#mainCard {
+    transition-duration: 5s;
+    display: none;
+    opacity: 0;
 }
 
 .description {
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.7);
-  width: 50vw;
-  color: white;
-  box-shadow: 0px 0px 10px #000066 inset;
-  position: relative;
-  margin: 4em auto;
-  width: 20%;
-  padding: 0.5em;
-  overflow: hidden;
-  border: solid 1px #000066;
-  box-shadow: 0px 0px 5px white;
-}
-
-input {
-  background-color: #000066;
-  color: white;
-  font-family: 'Pacifico', cursive;
-  font-size: 100%;
-  padding: 10px 5px 10px 5px;
-  border: 1px solid white;
-  outline: 5px solid #000066;
-}
-
-input:hover {
-  cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
+    box-shadow: 0px 0px 10px #000066 inset;
+    position: relative;
+    margin: 4em auto;
+    width: 40%;
+    padding: 0.5em;
+    overflow: hidden;
+    border: solid 1px #000066;
+    box-shadow: 0px 0px 5px white;
 }
 
 hr {
-  border: 0;
-  border-bottom: 1px dashed  #000066;
+    border: 0;
+    border-bottom: 1px dashed #000066;
 }
 
 #spanDate {
-  font-family: 'Dancing Script', cursive;
-  color: #000066;
-  font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: #000066;
+    font-size: 50px;
 }
 
 #spanLocation {
-  color: #660066;
-  font-size: 30px;
+    color: #660066;
+    font-size: 30px;
 }
 
 #rdv {
-  font-family: 'Pacifico', cursive;
-  position: absolute;
-  top: 8%;
-  right: -47%;
-  z-index: 10;
-  display: inline-block;
-  font-size: 14px;
-  width: 110%;
-  text-align: center;
-  padding: .25em 0;
-  color: white;
-  transform: rotate(45deg);
-  background: #000066;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 8%;
+    right: -47%;
+    z-index: 10;
+    display: inline-block;
+    font-size: 14px;
+    width: 110%;
+    text-align: center;
+    padding: 0.25em 0;
+    color: white;
+    transform: rotate(45deg);
+    background: #000066;
 }
 
 #celebration {
-  font-family: 'Pacifico', cursive;
-  color: #000066;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #000066;
+    text-align: center;
+}
+
+#programm {
+    color: #000066;
+    text-align: left;
+    padding: 5px;
+    font-size: 17px;
+}
+
+#confirmBtn {
+    display: none;
+    opacity: 0;
+    transition-duration: 5s;
+}
+
+.programmDay {
+    font-weight: bold;
 }
 
 ul {
-  color: #000066;
-  list-style: none;
-  text-align: left;
+    color: #000066;
+    list-style: none;
+    text-align: left;
 }
 
 ul li::before {
-  content: "\2665 \0020";
-  color: #660066;
+    content: '\2665 \0020';
+    color: #660066;
 }
 
 /* animation */
-.card {
-  animation: cardshowup 10s;
-}
 
 @keyframes cardshowup {
-    0% {opacity: 0}
-    40% {opacity: 0}
-    100% {opacity: 1}
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

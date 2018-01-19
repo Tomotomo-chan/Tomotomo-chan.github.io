@@ -16,32 +16,57 @@
 <!-- BODY -->
 <body>
 
-  <div ng-app="papyApp" ng-controller="MainCtrl">
-      <div id="bigTitle">Vous êtes invités</div>
-      <div id="subTitle">
-        <span>à faire la fête avec la famille Ressier</span>
-      </div>
-
-      <div class="card">
-        <div class="description">
-          <span id=rdv>Rendez-vous</span>
-          <span id="spanDate">Le dd/mm/yyyy</span><br />
-          <span id="spanLocation">à Souillac</span>
-          <hr />
-          <div>
-            <span id="celebration">Nous célèbrerons ensemble</span>
-            <ul>
-              <li> Les 60 ans de Francis </li>
-              <li> La nouvelle maison à Souillac   </li>
-              <li> Le re-mariage de Christine et Francis ! </li>
-            </ul>
-          </div>
+<div ng-app="papyApp" ng-controller="MainCtrl">
+    <div id="mainTitle">
+        <div id="bigTitle">Vous êtes invités  à une Crémailliversaire !</div>
+        <div id="subTitle">
+            <span>Venez faire la fête avec la famille RESSIER !</span>
         </div>
-        <div id="buttons">
-          <input type="submit" value="Je confirme ma présence"/>
+        <div id="showProgBtn">
+            <input type="submit" class="buttons" value="Voir le programme" ng-click="displayProgram()"/>
         </div>
     </div>
-  </div>
+
+    <div id="mainCard" class="card">
+        <div class="description">
+            <span id=rdv>Rendez-vous</span>
+            <span id="spanDate">Le week-end des 18 et 19/08/2018</span><br />
+            <span id="spanLocation">à Souillac</span>
+            <hr />
+            <div>
+            <span id="celebration">Nous célèbrerons donc comme il se doit :</span>
+            <ul>
+                <li> Les (presque) 60 ans de Francis </li>
+                <li> La nouvelle maison à Souillac   </li>
+            </ul>
+            </div>
+          <hr />
+          <div id="programm">
+              <div id="celebration">Le programme :</div>
+              <span class="programmDay"><u>Samedi</u></span> : Rendez-vous à 11h au
+              <a href="https://www.google.fr/maps/place/20+Impasse+de+la+Pomme,+46200+Souillac/@44.8893657,1.4800372,17z/data=!3m1!4b1!4m5!3m4!1s0x12acb6f7bf28b263:0x2196cd0858d1625b!8m2!3d44.8893657!4d1.4813386">
+              20 bis impasse de la Pomme à Souillac</a><br />
+            Départ pour le déjeuner quercynois au restaurant.<br />
+            <span class="programmDay">Après-midi</span> : promenade digestive sur les berges de la Dordogne, ou visite des
+              <a href="https://www.vert-marine.com/grottes-de-lacave-46/index.php">grottes de Lacave</a> selon la météo<br />
+            <span class="programmDay">Soir</span> : barbecue sur la pelouse (crudités, saucisse aux cèpes et glace)<br />
+            <span class="programmDay"><u>Dimanche</u></span> : Petit-déjeuner sur la pelouse.<br />
+            Au choix :
+            <ul>
+              <li>Descente de la Dordogne en canoë (à côté, env. 16€)</li>
+              <li>ou Parcours de pêche à la truite (à 10 km, gratuit ou parcours à 14€)</li>
+              <li>ou Visite de Rocamadour, … ( à 20 km, gratuit, beaucoup de marches mais il y a un petit train et un ascenseur, payants))</li>
+              <li>ou ne rien faire ! (gratuit)
+
+            </ul>
+            Déjeuner à la pisciculture du Blagour, avec le produit de la pêche ?
+          </div>
+        </div>
+        <div id="confirmBtn">
+          <input type="submit" class="buttons" value="Je confirme ma présence"/>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
